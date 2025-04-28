@@ -1,0 +1,20 @@
+spring:
+    application:
+     name: paymentservice
+    cloud:
+        config: 
+            uri: http://configserver:8071
+
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+
+
+management.endpoints.enabled-by-default: false
+management.endpoint.health:
+ enabled: true
+ show-details: always
+
+
+

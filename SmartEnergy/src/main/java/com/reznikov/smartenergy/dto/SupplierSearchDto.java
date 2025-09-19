@@ -7,11 +7,12 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class SupplierSearchDto  implements Serializable {
-    private List<SearchCriteria<?>> searchCriteriaList ;
-    private  String dataOption;
+public class SupplierSearchDto implements Serializable {
+    private List<SearchCriteria<?>> searchCriteriaList;
+    private String dataOption;
 }
